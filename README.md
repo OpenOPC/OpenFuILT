@@ -136,6 +136,7 @@ The result of the optimized mask simulation is shown below:
 ## Evaluation
 
 For the evaluation, please refer to the repository [OpenFuILT-Eval](https://github.com/OpenOPC/OpenFuILT-Eval).
+You can utilize the API to generate a pickle file of the mask and a GDSII file of the target as inputs for OpenFuILT-Eval.
 
 ## Citation
 
