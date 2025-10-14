@@ -4,3 +4,4 @@ rich
 tqdm
 scikit-learn
 opencv-python
+matplotlib
