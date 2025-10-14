@@ -1,0 +1,7 @@
+[submodule "TorchLitho-Lite"]
+    path = 3rdparty/TorchLitho-Lite
+    url = git@github.com:OpenOPC/TorchLitho-Lite.git
+
+[submodule "OpenFuILT-Eval"]
+    path = 3rdparty/OpenFuILT-Eval
+    url = git@github.com:OpenOPC/OpenFuILT-Eval.git

@@ -1,0 +1,6 @@
+gdspy
+rtree
+rich
+tqdm
+scikit-learn
+opencv-python
