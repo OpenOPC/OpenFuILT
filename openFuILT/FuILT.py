@@ -67,7 +67,7 @@ class FuILT(Engine):
                     ILT = algo.fn,
                     initializer=algo.initializer,
                     optimizer = self.optimizer,
-                    verbose = True,
+                    verbose = self.verbose,
                 )
                 worker.start()
             
