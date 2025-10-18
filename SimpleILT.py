@@ -24,7 +24,7 @@ def simpleILT(mask : torch.Tensor, target : torch.Tensor) -> torch.Tensor:
         pixel=14,
         defocus=[0, 30, 60],
         )
-    mask = torch.sigmoid(sigmoidStepness * mask)
+    mask = binarizer(mask)
     image = simulator(mask) # NCHW
     image = torch.sigmoid(stepness * (image - targetIntensity))
     return func.mse_loss(image[0][0], target, reduction='sum') + func.mse_loss(image[0][1], image[0][2], reduction='sum')
