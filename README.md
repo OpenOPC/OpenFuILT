@@ -132,11 +132,43 @@ The result of the optimized mask simulation is shown below:
 <p align="center">
   <img src=".assert/mask.png" alt="mask" />
 </p>
-
 ## Evaluation
 
+We provide several APIs in the FuILT engine that allow users to save the optimized mask and target layer as GDSII files.
+
+You can use the API to generate a pickle file of the mask and a GDSII file of the target, which can be used as inputs for our evaluation framework, OpenFuILT-Eval.
+
+```python
+def getFullMask(self) -> np.ndarray:
+        '''
+        get full chip mask
+        Returns:
+            np.ndarray: full chip mask
+        '''
+        ...
+        
+@staticmethod
+    def writePickle(mask : np.ndarray, file_path : str):
+        '''
+        write mask to pickle file
+        Args:
+            mask (np.ndarray): mask to be written
+            file_path (str): path to the pickle file
+        '''
+        ...
+```
+
+```python
+def writeTargetGDS(self, file_path : str):
+        '''
+        write target gds file
+        Args:
+            file_path (str): path to save gds file
+        '''
+        ...
+```
+
 For the evaluation, please refer to the repository [OpenFuILT-Eval](https://github.com/OpenOPC/OpenFuILT-Eval).
-You can utilize the API to generate a pickle file of the mask and a GDSII file of the target as inputs for OpenFuILT-Eval.
 
 ## Citation
 
