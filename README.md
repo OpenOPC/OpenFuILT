@@ -148,7 +148,7 @@ def getFullMask(self) -> np.ndarray:
         ...
         
 @staticmethod
-    def writePickle(mask : np.ndarray, file_path : str):
+def writePickle(mask : np.ndarray, file_path : str):
         '''
         write mask to pickle file
         Args:
